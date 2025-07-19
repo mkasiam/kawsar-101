@@ -1,4 +1,4 @@
-// Load external HTML components (navbar and footer)
+// Load external HTML components
 function includeHTML() {
   const includes = document.querySelectorAll("[data-include]");
   includes.forEach((el) => {
