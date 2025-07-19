@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Kawsar Ahmmed</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
+    <!-- Adding Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Linking with the custom css File  -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Linking With daisyui component Library -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- scripts for Tailwind css  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Linked For using Daisyui Themes (used Dark theme for this) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section  Starts From here  -->
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <!-- This is for Mobile View  -->
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Item 1</a></li>
+            <li><a>Item 3</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl rounded-lg">Kawsar Ahmmed</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <!-- This is for large screen view  -->
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Item 1</a></li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Button</a>
+      </div>
+    </div>
+  </body>
 </html>
