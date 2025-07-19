@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="dark" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Adding Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Linking with the custom css File  -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Linking With daisyui component Library -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- scripts for Tailwind css  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Linked For using Daisyui Themes (used Dark theme for this) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="./scripts/index.js"></script>
     <title>About | Kawsar Ahmmed</title>
   </head>
   <body>
-    <h1>About page</h1>
+    <!-- Navbar  -->
+    <div data-include="navbar.html"></div>
+    About Page
+    <!-- Footer  -->
+    <div data-include="footer.html"></div>
   </body>
 </html>
